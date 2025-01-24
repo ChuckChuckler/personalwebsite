@@ -1,0 +1,546 @@
+@keyframes a1{
+    from{width: 32%;}
+    to{width: 35%;}
+}
+
+@keyframes a2{
+    to{width: 32%;}
+    from{width: 35%;}
+}
+
+@keyframes skillSwell{
+    from{scale: 1; margin-top: 2px;}
+    to{scale: 1.2; margin-top: 5px;}
+}
+
+@keyframes skillShrink{
+    to{scale: 1; margin-top: 2px;}
+    from{scale: 1.2; margin-top: 5px;}
+}
+
+@keyframes projectPreviewSwell{
+    from{scale: 1;}
+    to{scale: 1.1;}
+}
+
+@keyframes projectPreviewShrink{
+    to{scale: 1;}
+    from{scale: 1.1;}
+}
+
+@keyframes arrowSwell{
+    from{font-size: 8vw; color: black;}
+    to{font-size: 9vw; color: rgb(44, 44, 44);}
+}
+
+@keyframes arrowShrink{
+    from{font-size: 9vw; color: rgb(44, 44, 44);}
+    to{font-size: 8vw; color: black;}
+}
+
+.mainHolder{
+    opacity: 0;
+}
+
+body{
+    background-color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p, li{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.aboutMe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerAboutMe{
+    width: 45%;
+}
+
+.inner2{
+    height: 80%;
+    margin-top: 5%;
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    box-shadow: 0 0 10px 2px white;
+}
+
+.sectionDivider{
+    width: 100%;
+    border: 1px dashed white;
+}
+
+span{
+    background-color: white;
+    color: black;
+    font-size: 2vw;
+}
+
+.span2{
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.span3{
+    color: white;
+    background-color: black;
+    font-size: 2vw;
+}
+
+.innerProfile{
+    opacity: 0;
+}
+
+.pronouns{
+    text-align: center;
+}
+
+.divider{
+    width: 0.5vw;
+    box-shadow: 0 0 5px 2px white;
+}
+
+.pfp{
+    width: 18vw;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    float: right;
+    box-shadow: 0 0 20px 1px rgb(126, 126, 126);
+}
+
+.bio{
+    width: 80%;
+    margin: auto;
+}
+
+.socials{
+    background-color: white;
+    width: 35%;
+    border-radius: 20px;
+    float: right;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.socialBtn{
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    border-style: none;
+    margin-top: 2px;
+}
+
+.github{
+    background-image: url("images/githubIcon.png");
+}
+
+.disc{
+    background-image: url("images/discordIcon.png");
+}
+
+.discId{
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+.d{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 0 0 5px 2px white;
+}
+
+.opening{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px; 
+    width: 32%;
+}
+
+.opening:hover{
+    width: 35%;
+    animation: a1 0.5s;
+}
+
+.opening:not(:hover){
+    width: 32%;
+    animation: a2 0.5s;
+}
+
+.q{
+    position: absolute;
+    top: 20vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.4vw;
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 40%;
+    display: none;
+    text-align: center;
+    z-index: 10;
+    user-select: none;
+    pointer-events: none;
+}
+
+.skills{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    scrollbar-width: none;
+    margin: auto;
+    border-radius: 20px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.skillIcon{
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+    background-color: transparent;
+}
+
+.skillIcon:hover{
+    scale: 1.2;
+    animation: skillSwell 0.2s;
+    margin-top: 5px;
+}
+
+.skillIcon:not(:hover){
+    scale: 1;
+    animation: skillShrink 0.2s;
+    margin-top: 2px;
+}
+
+.skillName{
+    text-align: center;
+}
+
+.projectsOuterHolder{
+    background-color: white;
+}
+
+
+.projects{
+    width: 100%;
+    padding-top: 1px;
+    height: 500px;
+}
+
+.projectsTitle{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px black;
+}
+
+.projectsShowcase{
+    background-color: black;
+    width: 80%;
+    height: 80%;
+    margin-left: 50px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectPreview{
+    width: 320px;
+    margin: 40px;
+    border: solid white 2px;
+    box-shadow: 0 0 5px 2px white;
+}
+
+.projectPreview:hover{
+    scale: 1.1;
+    animation: projectPreviewSwell 0.5s;
+}
+
+.projectPreview:not(:hover){
+    scale: 1;
+    animation: projectPreviewShrink 0.5s;
+}
+
+.projectBtnHolder{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectBtns{
+    width: 45%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    box-shadow: 0 0 2px 0.5px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projectBtns:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+.projectHr{
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+.outerFlex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navBtn{
+    width: 8%;
+    height: 8%;
+    margin: auto;
+    background-color: transparent;
+    border-style: none;
+    font-size: 8vw;
+}
+
+.navBtn:hover{
+    font-size: 9vw;
+    color: rgb(44, 44, 44);
+    animation: arrowSwell 0.3s;
+}
+
+.navBtn:not(:hover){
+    font-size: 8vw;
+    color: rgb(0, 0, 0);
+    animation: arrowShrink 0.3s;
+}
+
+.songImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: black 1px solid;
+    display: block;
+    margin: auto;
+}
+
+.controlButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.controlBtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 0.5px black solid;
+    background-color: rgb(247, 247, 247);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutMeTitle{
+    text-align: center;
+}
+
+.controlBtn:hover{
+    background-color: rgb(214, 214, 214);
+}
+
+
+.visibleSong{
+    display: block;
+}
+
+hr{
+    display: block;
+    margin: auto;
+}
+
+.hiddenSong{
+    display: none;
+}
+
+
+.prevSong{
+    background-image: url("images/previcon.png");
+}
+
+.nextSong{
+    background-image: url("images/nexticon.png");
+}
+
+.bioholder{
+    opacity: 0;
+}
+
+.scrollBreak{
+    opacity: 0;
+}
+
+.outerHolder{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.fullbioHolder{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 1100px) {
+    .pfp{
+        display: block;
+        position: relative;
+        margin: auto;
+        float: none;
+        width: 40vw;
+    }
+
+    .socials{
+        width: 61%;
+        height: 60px;
+        margin-right: 20%;
+    }
+
+    .discId{
+        font-size: 2vw;
+    }
+
+    .aboutMe{
+        display: block;
+    }
+
+    .aboutMeHolder{
+        align-items: baseline;
+    }
+
+    .innerAboutMe{
+        width: 100%;
+    }
+
+    .inner2{
+        height: 320px;
+        width: 320px;
+        margin: auto;
+    }
+
+    iframe{
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 796px) and (min-height: 1024px){
+    .q{
+        top: 30vw;
+    }
+    .span1{
+        font-size:5vw;
+    }
+    .span2{
+        font-size: 3vw;
+    }
+
+    .projectPreview{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projectsShowcase{
+        display: block;
+        overflow-y: scroll;
+        height: 400px;
+    }
+
+    .socials{
+        width: 61%;
+        height: 35px;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 796px) and (max-height: 1024px){
+    .q{
+        top: 30vw;
+    }
+    .span1{
+        font-size:5vw;
+    }
+    .span2{
+        font-size: 3vw;
+    }
+
+    .projectPreview{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projectsShowcase{
+        display: block;
+        overflow-y: scroll;
+        height: 400px;
+    }
+
+    .socials{
+        width: 61%;
+        height: 9vw;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .skills{
+        width: 50%;
+    }
+
+    .skillsTitle{
+        font-size: 5vw;
+    }
+}

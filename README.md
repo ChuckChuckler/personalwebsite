@@ -1,8 +1,8 @@
 # Barney Chucklenut's Personal Website
 I finally made a personal website!\
 I AM AWARE that the loading time is a little long. PLEASE be patient! It WILL load eventually. I'm going to update this project with new animations soon, and I will work on fixing that, so PLEASE disregard it as of now, I beg!!!
-
-
+\
+\
 This took an IMMENSE amount of effort animation-wise. As an estimate, about 90% of this project is animation and visual-design based.\
 All those cool animations currently on the website took ~20 hours!!\
 Still, I'm very proud of how they came out. They look really nice, especially since this is my first time going this in-depth with animations on my websites.\

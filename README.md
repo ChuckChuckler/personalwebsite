@@ -23,6 +23,7 @@ This website is entirely made with static HTML/CSS/JS. Animations were made with
 - Carousel animation on project showcase
 - Cursor effect (trail of some kind?)
 - Quicker load time
+- Less choppy animation
 - More random features that I come up with teehee
 
 

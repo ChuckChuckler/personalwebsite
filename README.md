@@ -7,7 +7,7 @@ This took an IMMENSE amount of effort animation-wise. As an estimate, about 90% 
 All those cool animations currently on the website took ~20 hours!!\
 Still, I'm very proud of how they came out. They look really nice, especially since this is my first time going this in-depth with animations on my websites.\
 All the art on the website is made by yours truly!\
-This website should be fine on any device-- I incorporated a lot of responsive CSS.
+And the website actually looks good on every device! (i tested it on my phone) Responsive CSS is my lifesaver...
 
 ## How to Use?
 It's a personal website. Honestly, all you have to do as a user is scroll. PLEASE scroll I added some really awesome scroll animations PRETTY PLEASE!!!\

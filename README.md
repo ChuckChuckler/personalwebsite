@@ -1,4 +1,4 @@
-# Barney Chucklenut's Personal Website
+# My Personal Website
 I finally made a personal website!\
 I AM AWARE that the loading time is a little long. PLEASE be patient! It WILL load eventually. I'm going to update this project with new animations soon, and I will work on fixing that, so PLEASE disregard it as of now, I beg!!!
 \
